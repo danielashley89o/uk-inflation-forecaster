@@ -25,6 +25,12 @@ Ridge was closer in 80 months and the simple guess in 61 (sign test p = 0.13).
 Each month is forecast using only earlier months, so the models never see the future.
 The data uses current published figures, so it ignores any later revisions.
 
+## Before you use these
+
+Don't call the shock result significant: its p-value is 0.004, but that period was singled out because it was unusual, so the result is weaker than it looks. If you tried several feature sets or alpha values against the test period, the overall p = 0.13 is flattering too.
+
+Some numbers aren't reproducible yet: the win counts by period, the Ridge coefficients and the correlation came from a throwaway script, not compare.py. The average errors are in comparison.csv.
+
 ## Run it yourself
 
     python3 -m venv .venv
