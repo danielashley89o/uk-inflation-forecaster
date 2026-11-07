@@ -10,9 +10,9 @@ Ridge was closer in 80 months and the simple guess in 61 (sign test p = 0.13).
 
 ## What I learned
 
-- [Your own point about the 2021-2023 shock]
-- [Your own point about why the simple guess is hard to beat]
-- [What you would try next]
+- Annual inflation has built-in inertia because consecutive readings share 11 of their 12 months. The correlation with the previous month is 0.985, and 53% of test months moved by 0.2 points or less.
+- A standard time-series model didn't help: ARIMA's average error was 0.305, against 0.304 for the simple guess. Ridge reached 0.277, about 9% lower, but that could still be luck (p = 0.13).
+- A standard time-series model didn't help: ARIMA's average error was 0.305, against 0.304 for the simple guess. Ridge reached 0.277, about 9% lower, but that could still be luck (p = 0.13).
 
 ## How it was tested
 
