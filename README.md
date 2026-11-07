@@ -14,6 +14,12 @@ Ridge was closer in 80 months and the simple guess in 61 (sign test p = 0.13).
 - A standard time-series model didn't help: ARIMA's average error was 0.305, against 0.304 for the simple guess. Ridge reached 0.277, about 9% lower, but that could still be luck (p = 0.13).
 - A standard time-series model didn't help: ARIMA's average error was 0.305, against 0.304 for the simple guess. Ridge reached 0.277, about 9% lower, but that could still be luck (p = 0.13).
 
+## What I would try next
+
+- Add energy data, such as gas prices and Ofgem price cap changes, which are announced in advance. The model only sees oil and the pound, so it may miss jumps in household bills.
+- Use a test that accounts for the size of errors, such as Diebold-Mariano. The sign test only counts wins, so a big miss counts the same as a small one.
+- Forecast 3–12 months ahead, where the simple guess should be weaker, and compare the results with the Bank of England's forecasts.
+
 ## How it was tested
 
 Each month is forecast using only earlier months, so the models never see the future.
