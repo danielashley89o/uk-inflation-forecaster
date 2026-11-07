@@ -1,0 +1,4 @@
+,Whole test,Before the shock (2015-2020),Inflation shock (2021-2023),Since then (2024 onwards)
+Naive,0.304,0.182,0.572,0.276
+ARIMA,0.305,0.186,0.554,0.292
+Ridge,0.277,0.176,0.493,0.26
